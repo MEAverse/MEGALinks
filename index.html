@@ -8,8 +8,11 @@
 </head>
 <body>
 <div class="container">
-  <div class="logo">
-    <img src="https://raw.githubusercontent.com/MEAverse/MEGALinks/main/MEGALogolight.png" alt="MEGAverse Logo">
+  <div class="header">
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/MEAverse/MEGALinks/main/MEGALogolight.png" alt="MEGAverse Logo">
+    </div>
+    <p class="follow-us">يمكنكم متابعتنا على مواقع التواصل الاجتماعي</p>
   </div>
   <ul class="wrapper">
     <li class="icon facebook">
@@ -44,8 +47,28 @@
     </li>
   </ul>
   <div class="footer">
-    <p>All rights reserved to MEGAverse platform</p>
+    <p>جميع الحقوق محفوظة لمنصة MEGAverse</p>
+    <button class="share-btn" onclick="shareLink()">شارك الرابط</button>
   </div>
 </div>
+<script>
+  function shareLink() {
+    const url = window.location.href;
+    const text = "تحقق من هذا الرابط المذهل: ";
+    if (navigator.share) {
+      navigator.share({
+        title: document.title,
+        text: text,
+        url: url
+      }).then(() => {
+        alert('تمت المشاركة بنجاح');
+      }).catch(err => {
+        console.error('حدث خطأ أثناء المشاركة:', err);
+      });
+    } else {
+      prompt('انسخ الرابط وشاركه مع أصدقائك:', url);
+    }
+  }
+</script>
 </body>
 </html>
