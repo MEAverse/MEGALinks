@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-  margin-bottom: 10px; /* تقليل المسافة بين الشعار والأيقونات */
+  margin-bottom: 10px;
 }
 
 .logo img {
@@ -43,9 +43,9 @@ body {
   border-radius: 50%;
   padding: 15px;
   margin: 10px;
-  width: 50px;
-  height: 50px;
-  font-size: 18px;
+  width: 60px; /* زيادة العرض */
+  height: 60px; /* زيادة الارتفاع */
+  font-size: 24px; /* زيادة حجم الأيقونة */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +63,7 @@ body {
 .wrapper .tooltip {
   position: absolute;
   top: 0;
-  font-size: 14px;
+  font-size: 16px; /* زيادة حجم النص */
   background: #ffffff;
   color: #ffffff;
   padding: 5px 8px;
@@ -87,7 +87,7 @@ body {
 }
 
 .wrapper .icon:hover .tooltip {
-  top: -45px;
+  top: -55px; /* تعديل المسافة لتحسين العرض */
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -144,4 +144,17 @@ body {
 .footer marquee {
   font-size: 14px;
   color: #333;
+}
+
+@media (max-width: 768px) {
+  .wrapper .icon {
+    width: 70px; /* زيادة العرض للشاشات الصغيرة */
+    height: 70px; /* زيادة الارتفاع للشاشات الصغيرة */
+    font-size: 28px; /* زيادة حجم الأيقونة للشاشات الصغيرة */
+  }
+
+  .wrapper .tooltip {
+    font-size: 18px; /* زيادة حجم النص للشاشات الصغيرة */
+    top: -60px; /* تعديل المسافة لتحسين العرض للشاشات الصغيرة */
+  }
 }
