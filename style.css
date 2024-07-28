@@ -41,7 +41,7 @@ body {
   position: relative;
   background: #ffffff;
   border-radius: 50%;
-  padding: 15px;
+  padding: 20px;
   margin: 10px;
   width: 60px; /* زيادة العرض */
   height: 60px; /* زيادة الارتفاع */
@@ -148,13 +148,14 @@ body {
 
 @media (max-width: 768px) {
   .wrapper .icon {
-    width: 200px; /* زيادة العرض للشاشات الصغيرة */
-    height: 200px; /* زيادة الارتفاع للشاشات الصغيرة */
-    font-size: 70px; /* زيادة حجم الأيقونة للشاشات الصغيرة */
+    width: 80px; /* زيادة العرض للشاشات الصغيرة */
+    height: 80px; /* زيادة الارتفاع للشاشات الصغيرة */
+    font-size: 32px; /* زيادة حجم الأيقونة للشاشات الصغيرة */
+    padding: 20px; /* زيادة التباعد الداخلي */
   }
 
   .wrapper .tooltip {
     font-size: 18px; /* زيادة حجم النص للشاشات الصغيرة */
-    top: -60px; /* تعديل المسافة لتحسين العرض للشاشات الصغيرة */
+    top: -65px; /* تعديل المسافة لتحسين العرض للشاشات الصغيرة */
   }
 }
