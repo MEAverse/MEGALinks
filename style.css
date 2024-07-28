@@ -25,10 +25,13 @@ body {
 
 .container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
-  margin-bottom: 20px; /* تعديل المسافة بين الشعار والأيقونات */
+  margin-bottom: 30px; /* زيادة المسافة بين الشعار والأيقونات */
 }
 
 .logo img {
@@ -141,8 +144,11 @@ body {
 }
 
 .footer {
+  position: fixed;
+  bottom: 20px; /* زيادة المسافة إلى الأسفل */
+  width: 100%;
   text-align: center;
-  font-size: 18px; /* زيادة حجم الخط */
+  font-size: 20px; /* زيادة حجم الخط */
   font-weight: bold;
 }
 
@@ -151,6 +157,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .logo {
+    margin-bottom: 20px; /* تقليل المسافة للشاشات الصغيرة */
+  }
+
   .logo img {
     max-width: 250px; /* تعديل عرض الشعار للشاشات الصغيرة */
   }
