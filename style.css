@@ -28,14 +28,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 90%; /* تعديل ارتفاع الحاوية */
 }
 
 .logo {
-  margin-bottom: 30px; /* زيادة المسافة بين الشعار والأيقونات */
+  margin-bottom: 40px; /* زيادة المسافة بين الشعار والأيقونات */
 }
 
 .logo img {
-  max-width: 300px; /* زيادة عرض الشعار */
+  max-width: 400px; /* زيادة عرض الشعار */
   height: auto;
 }
 
@@ -52,11 +54,11 @@ body {
   position: relative;
   background: #ffffff;
   border-radius: 50%;
-  padding: 25px;
-  margin: 15px 0; /* تعديل المسافة بين الأيقونات */
-  width: 100px; /* زيادة العرض */
-  height: 100px; /* زيادة الارتفاع */
-  font-size: 40px; /* زيادة حجم الأيقونة */
+  padding: 30px;
+  margin: 20px 0; /* تعديل المسافة بين الأيقونات */
+  width: 120px; /* زيادة العرض */
+  height: 120px; /* زيادة الارتفاع */
+  font-size: 50px; /* زيادة حجم الأيقونة */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +150,7 @@ body {
   bottom: 20px; /* زيادة المسافة إلى الأسفل */
   width: 100%;
   text-align: center;
-  font-size: 20px; /* زيادة حجم الخط */
+  font-size: 24px; /* زيادة حجم الخط */
   font-weight: bold;
 }
 
@@ -158,22 +160,22 @@ body {
 
 @media (max-width: 768px) {
   .logo {
-    margin-bottom: 20px; /* تقليل المسافة للشاشات الصغيرة */
+    margin-bottom: 30px; /* تقليل المسافة للشاشات الصغيرة */
   }
 
   .logo img {
-    max-width: 250px; /* تعديل عرض الشعار للشاشات الصغيرة */
+    max-width: 300px; /* تعديل عرض الشعار للشاشات الصغيرة */
   }
 
   .wrapper .icon {
-    width: 100px; /* زيادة العرض للشاشات الصغيرة */
-    height: 100px; /* زيادة الارتفاع للشاشات الصغيرة */
-    font-size: 40px; /* زيادة حجم الأيقونة للشاشات الصغيرة */
-    padding: 25px; /* زيادة التباعد الداخلي */
+    width: 140px; /* زيادة العرض للشاشات الصغيرة */
+    height: 140px; /* زيادة الارتفاع للشاشات الصغيرة */
+    font-size: 60px; /* زيادة حجم الأيقونة للشاشات الصغيرة */
+    padding: 30px; /* زيادة التباعد الداخلي */
   }
 
   .wrapper .tooltip {
     font-size: 20px; /* زيادة حجم النص للشاشات الصغيرة */
-    top: -75px; /* تعديل المسافة لتحسين العرض للشاشات الصغيرة */
+    top: -85px; /* تعديل المسافة لتحسين العرض للشاشات الصغيرة */
   }
 }
