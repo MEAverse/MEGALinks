@@ -20,6 +20,9 @@ body {
   font-family: "Poppins", sans-serif;
   place-items: center;
   background: linear-gradient(315deg, #ffffff, #d7e1ec);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logo {
@@ -41,11 +44,11 @@ body {
   position: relative;
   background: #ffffff;
   border-radius: 50%;
-  padding: 20px;
-  margin: 10px;
-  width: 60px; /* زيادة العرض */
-  height: 60px; /* زيادة الارتفاع */
-  font-size: 24px; /* زيادة حجم الأيقونة */
+  padding: 25px; /* زيادة التباعد الداخلي */
+  margin: 15px; /* زيادة المسافة بين الأيقونات */
+  width: 100px; /* زيادة العرض */
+  height: 100px; /* زيادة الارتفاع */
+  font-size: 40px; /* زيادة حجم الأيقونة */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +66,7 @@ body {
 .wrapper .tooltip {
   position: absolute;
   top: 0;
-  font-size: 16px; /* زيادة حجم النص */
+  font-size: 18px; /* زيادة حجم النص */
   background: #ffffff;
   color: #ffffff;
   padding: 5px 8px;
@@ -87,7 +90,7 @@ body {
 }
 
 .wrapper .icon:hover .tooltip {
-  top: -55px; /* تعديل المسافة لتحسين العرض */
+  top: -65px; /* تعديل المسافة لتحسين العرض */
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -148,14 +151,14 @@ body {
 
 @media (max-width: 768px) {
   .wrapper .icon {
-    width: 80px; /* زيادة العرض للشاشات الصغيرة */
-    height: 80px; /* زيادة الارتفاع للشاشات الصغيرة */
-    font-size: 32px; /* زيادة حجم الأيقونة للشاشات الصغيرة */
-    padding: 20px; /* زيادة التباعد الداخلي */
+    width: 120px; /* زيادة العرض للشاشات الصغيرة */
+    height: 120px; /* زيادة الارتفاع للشاشات الصغيرة */
+    font-size: 48px; /* زيادة حجم الأيقونة للشاشات الصغيرة */
+    padding: 30px; /* زيادة التباعد الداخلي */
   }
 
   .wrapper .tooltip {
-    font-size: 18px; /* زيادة حجم النص للشاشات الصغيرة */
-    top: -65px; /* تعديل المسافة لتحسين العرض للشاشات الصغيرة */
+    font-size: 20px; /* زيادة حجم النص للشاشات الصغيرة */
+    top: -75px; /* تعديل المسافة لتحسين العرض للشاشات الصغيرة */
   }
 }
