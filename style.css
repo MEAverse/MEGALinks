@@ -44,11 +44,11 @@ body {
   position: relative;
   background: #ffffff;
   border-radius: 50%;
-  padding: 25px; /* زيادة التباعد الداخلي */
-  margin: 15px; /* زيادة المسافة بين الأيقونات */
-  width: 100px; /* زيادة العرض */
-  height: 100px; /* زيادة الارتفاع */
-  font-size: 40px; /* زيادة حجم الأيقونة */
+  padding: 20px;
+  margin: 10px;
+  width: 80px; /* زيادة العرض */
+  height: 80px; /* زيادة الارتفاع */
+  font-size: 36px; /* زيادة حجم الأيقونة */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,11 +150,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  .logo {
+    margin-bottom: 5px; /* تقليل المسافة بين الشعار والأيقونات للشاشات الصغيرة */
+  }
+  
   .wrapper .icon {
-    width: 120px; /* زيادة العرض للشاشات الصغيرة */
-    height: 120px; /* زيادة الارتفاع للشاشات الصغيرة */
-    font-size: 48px; /* زيادة حجم الأيقونة للشاشات الصغيرة */
-    padding: 30px; /* زيادة التباعد الداخلي */
+    width: 100px; /* زيادة العرض للشاشات الصغيرة */
+    height: 100px; /* زيادة الارتفاع للشاشات الصغيرة */
+    font-size: 40px; /* زيادة حجم الأيقونة للشاشات الصغيرة */
+    padding: 25px; /* زيادة التباعد الداخلي */
+    margin: 10px; /* زيادة المسافة بين الأيقونات */
   }
 
   .wrapper .tooltip {
