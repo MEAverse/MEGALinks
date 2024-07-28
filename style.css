@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* تعديل لتوسيط الأيقونات */
   height: 90%; /* تعديل ارتفاع الحاوية */
 }
 
