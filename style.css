@@ -206,6 +206,15 @@ body {
     font-size: 20px;
     top: -85px;
   }
+
+  .footer {
+    font-size: 28px; /* زيادة حجم النص للشاشات الصغيرة */
+  }
+
+  .share-btn {
+    font-size: 22px; /* زيادة حجم الخط لزر المشاركة للشاشات الصغيرة */
+    padding: 12px 24px; /* زيادة حجم زر المشاركة للشاشات الصغيرة */
+  }
 }
 
 @media (min-width: 1024px) {
