@@ -28,34 +28,35 @@ body {
 }
 
 .logo {
-  margin-bottom: 10px;
+  margin-bottom: 20px; /* تعديل المسافة بين الشعار والأيقونات */
 }
 
 .logo img {
-  max-width: 200px;
+  max-width: 300px; /* زيادة عرض الشعار */
   height: auto;
 }
 
 .wrapper {
-  display: inline-flex;
   list-style: none;
   padding: 0;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wrapper .icon {
   position: relative;
   background: #ffffff;
   border-radius: 50%;
-  padding: 20px;
-  margin: 10px;
-  width: 80px; /* زيادة العرض */
-  height: 80px; /* زيادة الارتفاع */
-  font-size: 36px; /* زيادة حجم الأيقونة */
+  padding: 25px;
+  margin: 15px 0; /* تعديل المسافة بين الأيقونات */
+  width: 100px; /* زيادة العرض */
+  height: 100px; /* زيادة الارتفاع */
+  font-size: 40px; /* زيادة حجم الأيقونة */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -141,15 +142,19 @@ body {
 
 .footer {
   text-align: center;
-  font-size: 14px;
+  font-size: 18px; /* زيادة حجم الخط */
+  font-weight: bold;
 }
 
-.footer marquee {
-  font-size: 14px;
-  color: #333;
+.footer p {
+  margin: 10px 0;
 }
 
 @media (max-width: 768px) {
+  .logo img {
+    max-width: 250px; /* تعديل عرض الشعار للشاشات الصغيرة */
+  }
+
   .wrapper .icon {
     width: 100px; /* زيادة العرض للشاشات الصغيرة */
     height: 100px; /* زيادة الارتفاع للشاشات الصغيرة */
