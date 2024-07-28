@@ -28,17 +28,30 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* تعديل لتوسيط الأيقونات */
-  height: 90%; /* تعديل ارتفاع الحاوية */
+  justify-content: center;
+  height: 90%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .logo {
-  margin-bottom: 40px; /* زيادة المسافة بين الشعار والأيقونات */
+  margin-bottom: 20px;
 }
 
 .logo img {
-  max-width: 400px; /* زيادة عرض الشعار */
+  max-width: 600px;
   height: auto;
+}
+
+.follow-us {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .wrapper {
@@ -46,8 +59,8 @@ body {
   padding: 0;
   margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .wrapper .icon {
@@ -55,10 +68,10 @@ body {
   background: #ffffff;
   border-radius: 50%;
   padding: 30px;
-  margin: 20px 0; /* تعديل المسافة بين الأيقونات */
-  width: 120px; /* زيادة العرض */
-  height: 120px; /* زيادة الارتفاع */
-  font-size: 50px; /* زيادة حجم الأيقونة */
+  margin: 20px;
+  width: 120px;
+  height: 120px;
+  font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +88,7 @@ body {
 .wrapper .tooltip {
   position: absolute;
   top: 0;
-  font-size: 18px; /* زيادة حجم النص */
+  font-size: 18px;
   background: #ffffff;
   color: #ffffff;
   padding: 5px 8px;
@@ -99,7 +112,7 @@ body {
 }
 
 .wrapper .icon:hover .tooltip {
-  top: -65px; /* تعديل المسافة لتحسين العرض */
+  top: -65px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -147,10 +160,10 @@ body {
 
 .footer {
   position: fixed;
-  bottom: 20px; /* زيادة المسافة إلى الأسفل */
+  bottom: 20px;
   width: 100%;
   text-align: center;
-  font-size: 24px; /* زيادة حجم الخط */
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -158,24 +171,53 @@ body {
   margin: 10px 0;
 }
 
+.share-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.share-btn:hover {
+  background: #0056b3;
+}
+
 @media (max-width: 768px) {
   .logo {
-    margin-bottom: 30px; /* تقليل المسافة للشاشات الصغيرة */
+    margin-bottom: 30px;
   }
 
   .logo img {
-    max-width: 300px; /* تعديل عرض الشعار للشاشات الصغيرة */
+    max-width: 300px;
   }
 
   .wrapper .icon {
-    width: 140px; /* زيادة العرض للشاشات الصغيرة */
-    height: 140px; /* زيادة الارتفاع للشاشات الصغيرة */
-    font-size: 60px; /* زيادة حجم الأيقونة للشاشات الصغيرة */
-    padding: 30px; /* زيادة التباعد الداخلي */
+    width: 140px;
+    height: 140px;
+    font-size: 60px;
+    padding: 30px;
   }
 
   .wrapper .tooltip {
-    font-size: 20px; /* زيادة حجم النص للشاشات الصغيرة */
-    top: -85px; /* تعديل المسافة لتحسين العرض للشاشات الصغيرة */
+    font-size: 20px;
+    top: -85px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper .icon {
+    width: 160px;
+    height: 160px;
+    font-size: 70px;
+    padding: 40px;
+  }
+
+  .wrapper .tooltip {
+    font-size: 22px;
+    top: -95px;
   }
 }
